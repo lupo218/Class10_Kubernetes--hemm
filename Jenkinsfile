@@ -1,5 +1,5 @@
 pipeline {
-      agent {
+      agent{
 		kubernetes {
           inheritFrom 'ubuntu'
 		}
@@ -13,4 +13,5 @@ pipeline {
             }
         }
     }
+}
 }
