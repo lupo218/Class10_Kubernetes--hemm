@@ -1,8 +1,5 @@
 pipeline {
-      agent{
-		kubernetes {
-          inheritFrom 'ubuntu'
-		}
+    agent any
 
     stages {
         stage('Hello') {
@@ -13,5 +10,4 @@ pipeline {
             }
         }
     }
-}
 }
